@@ -12,22 +12,26 @@ class Main {
 
   // Challenge 2: Fahrenheit → Celsius
   double fahrenheitToCelsius(double fahrenheit) {
-    return (fahrenheit - 32) * 5.0 / 9.0;
+    double v = (fahrenheit - 32) * 5.0 / 9.0;
+    return v;
   }
 
   // Challenge 3: Volume of a sphere
   double volumeOfSphere(double radius) {
-    return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+    double vs = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+    return vs;
   }
 
   // Challenge 4: Volume of a cone
   double volumeOfCone(double radius, double height) {
-    return (1.0 / 3.0) * Math.PI * Math.pow(radius, 2) * height;
+    double vc = (1.0 / 3.0) * Math.PI * Math.pow(radius, 2) * height;
+    return vc;
   }
 
   // Challenge 5: Distance between two points
   double distance(double x1, double y1, double x2, double y2) {
-    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+    double D = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+    return D;
   }
 
   void init() {
