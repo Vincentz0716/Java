@@ -1,61 +1,65 @@
 class Main {
-    public static void main(String[] args) {
-        (new Main()).init();
-    }
+  public static void main(String[] args) {
+    (new Main()).init();
+  }
 
-    void init() {
+  // Challenge 1: Display integer
+  void displayInteger() {
+    System.out.print("Enter an integer: ");
+    int userInput = Input.readInt();
+    System.out.println("You entered: " + userInput);
+  }
 
-/*  
-    Challenge 1:
-    Ask the user to enter an integer and display it.
-*/
-      System.out.print("Enter an integer: ");
-      int userInput = Input.readInt();
-      System.out.println("You entered: " + userInput);
-	
-/*  
-    Challenge 2:
-    Convert Fahrenheit to Celsius and display the result.
-*/
-	System.out.print("Enter temperature in Fahrenheit: ");
-	  double fahrenheit = Input.readDouble();
-	  double celsius = (fahrenheit - 32) * 5.0 / 9.0;
-	  System.out.println("Temperature in Celsius: " + celsius);
+  // Challenge 2: Fahrenheit → Celsius
+  double fahrenheitToCelsius(double fahrenheit) {
+    return (fahrenheit - 32) * 5.0 / 9.0;
+  }
 
-/*  
-    Challenge 3:
-    Ask for the radius of a sphere and calculate the volume.
-*/
-	System.out.print("Enter the radius of the sphere: ");
-	  double radius = Input.readDouble();
-	  double volume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
-	  System.out.println("Volume of the sphere: " + volume);
-/*  
-    Challenge 4:
-    Ask for the radius and height of a cone and calculate the volume.
-*/
-	System.out.print("Enter the radius of the cone: ");
-	  double coneRadius = Input.readDouble();
-	  System.out.print("Enter the height of the cone: ");
-	  double coneHeight = Input.readDouble();
-	  double coneVolume = (1.0 / 3.0) * Math.PI * Math.pow(coneRadius, 2) * coneHeight;
-	  System.out.println("Volume of the cone: " + coneVolume);
+  // Challenge 3: Volume of a sphere
+  double volumeOfSphere(double radius) {
+    return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+  }
 
-/*  
-    Challenge 5:
-    Ask for two points and calculate the distance between them.
-*/
-	System.out.print("Enter x1: ");
-	  double x1 = Input.readDouble();
-	  System.out.print("Enter y1: ");
-	  double y1 = Input.readDouble();
-	  System.out.print("Enter x2: ");
-	  double x2 = Input.readDouble();
-	  System.out.print("Enter y2: ");
-	  double y2 = Input.readDouble();
-	  double dist = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-	  System.out.println("Distance between two points: " + dist);
-	}
+  // Challenge 4: Volume of a cone
+  double volumeOfCone(double radius, double height) {
+    return (1.0 / 3.0) * Math.PI * Math.pow(radius, 2) * height;
+  }
 
+  // Challenge 5: Distance between two points
+  double distance(double x1, double y1, double x2, double y2) {
+    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+  }
+
+  void init() {
+    // Challenge 1 test
+    displayInteger();
+
+    // Challenge 2 test
+    System.out.print("Enter temperature in Fahrenheit: ");
+    double fahrenheit = Input.readDouble();
+    System.out.println("Temperature in Celsius: " + fahrenheitToCelsius(fahrenheit));
+
+    // Challenge 3 test
+    System.out.print("Enter the radius of the sphere: ");
+    double r = Input.readDouble();
+    System.out.println("Volume of the sphere: " + volumeOfSphere(r));
+
+    // Challenge 4 test
+    System.out.print("Enter the radius of the cone: ");
+    double coneR = Input.readDouble();
+    System.out.print("Enter the height of the cone: ");
+    double coneH = Input.readDouble();
+    System.out.println("Volume of the cone: " + volumeOfCone(coneR, coneH));
+
+    // Challenge 5 test
+    System.out.print("Enter x1: ");
+    double x1 = Input.readDouble();
+    System.out.print("Enter y1: ");
+    double y1 = Input.readDouble();
+    System.out.print("Enter x2: ");
+    double x2 = Input.readDouble();
+    System.out.print("Enter y2: ");
+    double y2 = Input.readDouble();
+    System.out.println("Distance between two points: " + distance(x1, y1, x2, y2));
+  }
 }
-   
