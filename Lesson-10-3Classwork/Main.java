@@ -6,9 +6,9 @@ class Main {
   void init(){
     System.out.println("Problem 1: Group Savings");
     System.out.print("Enter number of tickets to purchase: ");
-    int numTickets = Input.readInt();
-    double totalCost = groupSavings(numTickets);
-    System.out.printf("Total cost for %d tickets is $%.2f\n", numTickets, totalCost);
+  int numTickets = Input.readInt();
+  double totalCost = groupSavings(numTickets);
+  System.out.printf("Total cost for %d tickets is $%.2f\n", numTickets, totalCost);
 
     System.out.println("\nProblem 2: Grocery Discount");
     System.out.print("Enter total amount spent at grocery store: ");
