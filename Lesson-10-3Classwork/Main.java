@@ -4,7 +4,19 @@ class Main {
   }
 
   void init(){
+    System.out.println("Problem 1: Group Savings");
+    System.out.print("Enter number of tickets to purchase: ");
+    int numTickets = Input.readInt();
+    double totalCost = groupSavings(numTickets);
+    System.out.printf("Total cost for %d tickets is $%.2f\n", numTickets, totalCost);
 
+    System.out.println("\nProblem 2: Grocery Discount");
+    System.out.print("Enter total amount spent at grocery store: ");
+    double totalSpent = Input.readDouble();
+    System.out.print("Enter number of cans of beans purchased: ");
+    double numCans = Input.readDouble();
+    double savings = groceryDiscount(totalSpent, numCans);
+    System.out.printf("Total savings on your bill is $%.2f\n", savings);
         
   }
 
@@ -16,8 +28,8 @@ class Main {
       9 to 16 tickets : $10.50 per ticket
       over 16 tickets : $8.50 per ticket
     */
-    int groupSavings(int numTickets){
-      int totalCost = 0;
+    double groupSavings(int numTickets){
+      double totalCost = 0;
       if(numTickets >= 1 && numTickets <= 8){
         totalCost = numTickets * 11;
       } else if(numTickets >= 9 && numTickets <= 16){
@@ -39,8 +51,8 @@ class Main {
         of beans: $25 savings
         Otherwise: $0 savings.
     */
-    int groceryDiscount(int totalSpent, int numCans){
-      int savings = 0;
+    double groceryDiscount(double totalSpent, double numCans){
+      double savings = 0;
       if(totalSpent >= 100 && totalSpent <= 200 && numCans >= 3){
         savings = 10;
       } else if(totalSpent > 200 && numCans > 4){
