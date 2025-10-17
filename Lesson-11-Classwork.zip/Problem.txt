@@ -1,0 +1,11 @@
+Problem 1:
+Write a function getUsername that accepts an email and returns the user name. Example, joexyz@gmail.com ==> joexyz
+
+Problem 2:
+Write a function splitReverse that accepts a string and returns a string made up the second half plus the first half of the original string.
+Example: "Happy Days" ==> " DaysHappy"
+
+Problem 3:
+Write a function createUsername that accepts first name, second name and osis number and returns first letter of first name, the lastname and the last four characters of the osis.
+Example: John Doe 123456789 ==> "JDoe6789"
+
