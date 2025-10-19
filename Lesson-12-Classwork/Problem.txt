@@ -1,0 +1,30 @@
+Problem 1:
+Write a function collegeCredit that accepts a course code and if a course is college credit return true otherwise return false. If the sixth letter of the course code is "E" or "M" then is a college credit course.
+
+
+
+
+Problem 2:
+Write a function getCounsoler that accepts a students official class and returns their guidance consulor based on the either the first or middle character of official class being:
+
+B-Berrouet
+C-Chu
+D-Dinn
+E-Eyzengart
+F-Flores
+G-Gibson
+L-Shim Lee
+M-Meltzer
+P-Paccione
+S-Fiore
+T-Tsai
+Z-Zayes
+
+
+Problem 3:
+Write a function imageType that accepts a image file name and returns the image type based on the file extension.
+
+JPEG or JPG - Joint Photographic Experts Group
+PNG - Portable Network Graphics
+GIF - Graphics Interchange Format
+PDF - Portalble Document Format
