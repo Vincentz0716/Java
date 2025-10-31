@@ -1,0 +1,30 @@
+Problem 1:
+
+Write a function swapLetter that accepts a string to modify, a string find and a string replace.  The function returns a string with all the find letter's and replaces them with the replace string.
+
+Hint:Build a new string.
+Example: swapLetter("the seen","e","%")  ==> "th% s%%n"
+
+
+
+Problem 2:
+Write a function encryption2 that accepts a string and returns the string where the orginal string is split in half and each letter from each of the half's is used to create a new string using the 
+
+Example: There are two examples, one is odd number of chars and the second is even number of chars.
+
+encryption2("abcdefghi")==> "aebfcgdhi"
+
+ process:  "abcdefghi" -> "abcd" "efghi"  -> "ae" + "bf" + "cg" + "dh" +"i"  -> "aebfcgdhi"
+
+encryption2("abcdefgh") ==> "aebfcgdh"
+ process:  "abcdefgh" -> "abcd" "efgh"  -> "ae" + "bf" + "cg" + "dh"  -> "aebfcgdh"
+
+
+
+Problem 3:
+Write a function encryption3 that accepts a string and returns the string that rearranges the characters of the incoming string as: 1st,last,2nd,last-1,3rd,last-2,... 
+and so on.
+
+Example
+encryption3("abcdef")==> "afbecd"
+encryption3("abcde")==> "aebd"
