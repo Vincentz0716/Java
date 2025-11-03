@@ -1,0 +1,18 @@
+Problem 1:
+
+Write a function addNums that return a string display the addition of two random integers. The integers can range from -5 to 50 inclusively. 
+
+Example:
+addNums()==> "-23 + 10 = ?"
+addNums()==> "17 + 41 = ?"
+
+
+Problem 2:
+
+Write a function generatePin that generates a random pin number, however, each digit must be from 3 to 8.
+
+Example:
+generatePin() ==> 4547
+generatePin() ==> 8365
+
+
