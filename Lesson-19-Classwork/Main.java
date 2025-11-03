@@ -18,11 +18,11 @@ class Main {
   }
 
   int generatePin(){
-    StringBuilder pin = new StringBuilder();
+    String pin = ""; 
     for (int i = 0; i < 4; i++) {
       int digit = (int)(Math.random() * 6) + 3;
-      pin.append(digit);
+      pin = pin + digit; 
     }
-    return Integer.parseInt(pin.toString());
+    return Integer.parseInt(pin);
   }
 }
