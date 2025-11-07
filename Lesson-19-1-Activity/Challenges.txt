@@ -1,0 +1,36 @@
+
+Challenge 1:
+Write a function rollDice that rolls two dice and returns the two values as one string.
+
+Example:
+rollDice() ==> "2 6"
+rollDice() ==> "3 1"
+
+Challenge 2:
+Write a function lotto that returns a string of 5 numbers from 1 to 48.
+
+
+Challenge 3:
+Write a function diceDistribution that accepts an integer N and rolls a die N times, keeps a counter of the number of times 1,2,3,4,5,6 was rolled (need a counter for each) and displays the counters for each.
+
+Try N for 100, 1,000, 100,000, 1,000,000
+
+What do the results look like as the number N gets larger?
+
+Challenge 4:
+Write a function additionTutor that generates two random numbers and prompts the user for what the sum of the two numbers. If the answer is correct return "Correct!" otherwise return "Incorrect".
+
+
+Bonus Challenge:
+Write a function mathQuiz that generates and that generates random addition, subtraction, multiplication or division problem of two random integers, prompts the user for the answer and returns "Correct!" if the answer is correct, otherwise return "Incorrect". The random integers should range from -100 to 100 (inclusively).
+
+Hint: For the random operations (+,-,*,/) using a random number from 0 to 3 where 0 means +, 1 means -, 2 means * and 3 means /.
+
+
+
+
+
+
+
+
+
