@@ -1,0 +1,42 @@
+
+Challenge 1:
+Suppose you are given a choice between getting 5 dollars verse getting a penny on day one that doubles every day.  How many days will it take for the a penny double every day take to get to or surpass $5?
+
+Write a function allowance that solves how many days it takes.
+
+Challenge 2:
+Write a function addTwoNumbers that generates two random integers, then ask the user what is the sum of these two numbers.  Allow the user to keep try until they get it correct.
+
+Challenge 3:
+Write a function GCF that accepts two integers, calculates and returns the GCF (greatest common facter) of the two integers.
+
+
+Challenge 4:
+Write a menu function called menu that allows a user to choose one of the three functions written above. Also include a choice to exit out.
+Example:
+Welcome Looney Tune's System
+Select from the following choices:
+1 - Allowance
+2 - Addition game
+3 - Calculate the GCF of two integers
+4 - Exit Looney Tune System
+
+
+Bonus Challenge:
+We want to create a rock paper scissors game.  The game is the user agains the computer.  You'll ask the user to choose 1 for rock, 2 for paper and 3 for scissor. So there will be three possible outcomes: draw, win, lose.
+
+The rules are has follow:
+If the player and the computer choose the same, it's a draw and play again.
+Rock beats scissors
+Rock loses against paper
+Paper loses against scissors
+
+
+rock paper scissor
+
+
+
+
+
+
+
