@@ -9,14 +9,11 @@ class Main {
 
   void init(){
 
-    // Problem 1: create an array of friends
     String[] friends = {"Alice", "Bob", "Charlie", "David"};
 
-    // Problem 2: test convert function
     double[] temperaturesCelsius = {0, 10, 20, 30};
     double[] temperaturesFahrenheit = convert(temperaturesCelsius);
 
-    // Print results
     for (String f : friends) {
       print(f);
     }
@@ -26,16 +23,10 @@ class Main {
     }
   }
 
-  /*
-  Problem 1:
-  In the init function, create an array of friends.
-  */
+
   String[] friends = {"Alice", "Bob", "Charlie", "David"};
 
-  /*
-  Problem 2:
-  convert Celsius array to Fahrenheit array
-  */
+  
   double celsiusToFarhenheit(double c){
     return c * 9 / 5 + 32;
   }
