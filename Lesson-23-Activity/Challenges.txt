@@ -1,0 +1,40 @@
+
+Challenge 1:
+Create an array of emojis and then display each emoji.
+Using the link of unicodes: https://unicode.org/emoji/charts/emoji-list.html
+
+When printing, use the convertToEmoji function to display
+the actual emoji.
+
+
+Challenge 2:
+Write a function total that accepts an array of prices and returns the sum of prices plus tax. Use a tax rate of 8.525%.
+
+To test the function, create an array of prices in the init function.
+
+Challenge 3:
+Create a function isin that accepts an array of integers and a integer number and return true if the number is in the array otherwise return false
+
+Create an array of integers to test the function isin.
+
+
+Challenge 4:
+Create a function checkLotto that accepts an array representing 6 lotto number picks and an array representing 6 lotto numbers drawn and return how many winning lotto number picks where in the lotto numbers drawn. 
+
+HINT: make use of the function isin from challange 3.
+
+To test the function, create an array representing your lotto number picks and another array representing the lotto numbers drawn
+
+Challenge 5:
+
+Write a function primeList that takes in an integer N and the function return the first N prime numbers. Use the function isPrime given.
+
+Bonus Challenge:
+
+Write a function biggest that accepts an array of integers and returns the largest value in the array.
+
+
+
+
+
+

@@ -36,7 +36,7 @@ class Main {
   //Problem 2
   // Write a function called avgArray that accepts an array of integers and
   // returns the average of the values in the array
-  double avgArray(int nums[]){
+  double avgArray(int[] nums){
     int sum = sumArray(nums);
     return (double)sum / nums.length;
   }
