@@ -116,17 +116,17 @@ class Main {
   }
 
   // Challenge 5: Prime number list
-  String primeList(int N) {
-    StringBuilder primes = new StringBuilder();
+String primeList(int N) {
+    String primes = "";
     int count = 0;
-    int num = 2; // Start checking from 2 (smallest prime number)
+    int num = 2;
     while (count < N) {
-      if (isPrime(num)) {
-        primes.append(num).append(" ");
-        count++;
-      }
-      num++;
+        if (isPrime(num)) {
+            primes += num + " ";
+            count++;
+        }
+        num++;
     }
-    return primes.toString().trim();
-  }
+    return primes();
+}
 }
