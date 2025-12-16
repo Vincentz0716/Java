@@ -6,7 +6,7 @@ class Main {
     void print(Object o) { System.out.println(o); }
 
     void init() {
-        String file = "harroldoeveryonethisisasecretmessage";
+        String file = "123456789";
         int[] shiftPattern = {3, 1, 4, 1, 5};
 
         //  ENCODING 
