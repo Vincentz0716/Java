@@ -6,7 +6,7 @@ class Main {
     void print(Object o) { System.out.println(o); }
 
     void init() {
-        String file = "123456789";
+        String file = "i like bananas and apples";
         int[] shiftPattern = {3, 1, 4, 1, 5};
 
         //  ENCODING 
@@ -79,10 +79,8 @@ class Main {
             String bin = String.format("%8s", Integer.toBinaryString(c))
                             .replace(' ', '0');
 
-            // rotate left by 2
             String rot = bin.substring(2) + bin.substring(0, 2);
 
-            // flip bits
             String flipped = "";
             for (char b : rot.toCharArray())
                 flipped += (b == '0' ? '1' : '0');
@@ -102,12 +100,10 @@ class Main {
             String bin = String.format("%8s", Integer.toBinaryString(c & 0xFF))
                             .replace(' ', '0');   // FIXED
 
-            // flip bits back
             String unflip = "";
             for (char b : bin.toCharArray())
                 unflip += (b == '0' ? '1' : '0');
 
-            // rotate right by 2 (reverse of rotate-left)
             String restored = unflip.substring(6) + unflip.substring(0, 6);
 
             arr[i] = (char) Integer.parseInt(restored, 2);
