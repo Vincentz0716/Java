@@ -1,0 +1,8 @@
+1)
+Create a class of a dog using the UML in the Dog.PNG file.
+
+2)
+Every Class most have it's own file with the exact name as the class name with an extension .java
+
+3)
+In the init function, create 3 dogs: Toto, Snoopy, and Poophy. Make each dog bark.

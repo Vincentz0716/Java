@@ -98,7 +98,7 @@ class Main {
             char c = arr[i];
 
             String bin = String.format("%8s", Integer.toBinaryString(c & 0xFF))
-                            .replace(' ', '0');   // FIXED
+                            .replace(' ', '0');  
 
             String unflip = "";
             for (char b : bin.toCharArray())
