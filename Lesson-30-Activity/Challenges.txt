@@ -1,0 +1,15 @@
+
+Challenge 1:
+Create a class Car using the UML provided in the CarUML.PNG file. Remember to create a seperate file that must have the exact same name as the class name; in this case: Car.java
+
+Challenge 2:
+Create two car object of your choice and store them in seperate variables.
+
+Challenge 3:
+Display to the console the brand, model and value of each car.
+
+Bonus:
+Display the brand and model of any of the cars that has a value over 10,000.  You need to get that information from the object itself to the determine the value.
+
+
+
