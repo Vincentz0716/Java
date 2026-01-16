@@ -1,0 +1,13 @@
+Problem 1
+
+Modify the Student class to store and add courses as an array of strings. 
+  - You will need to add a class variable and change to constructor for the Student class.
+
+Problem 2
+
+Write a function checkCourse in the Student class that accepts a course has a string and returns true if the student is taking that course, otherwise return false.
+
+Problem 3
+
+Create two student objects. Use the arrays course1 and course2 when creating the two student objects.
+
