@@ -1,0 +1,21 @@
+Use the class CarItem for the challenges below:
+
+Challenge 1:
+Write the constructor for the class CarItem.
+
+
+Challenge 2:
+Write the class function getItemPrice that returns the price discounted by 10% (i.e. 90% of the original price) if it's on sale, otherwise return the original itemPrice.
+
+
+Challenge 3:
+Create three cartItems of any type (e.g.: food,electronics,etc), where some of the items are on sale.
+
+Challenge 4:
+Display the name and price of any cart item on sale.
+
+Challenge 5:
+
+Display the subtotal of all the cartItems, the tax (use 8.675%), and then the total amount (which includes the subtotal plus tax.).
+
+
