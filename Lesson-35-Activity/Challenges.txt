@@ -1,0 +1,30 @@
+Use the array of students called students and the functions from the Student class we used in our prior lesson to answer the question list below.  
+
+Challenge 1:
+How many students are passing and how many are failing?
+
+Challenge 2:
+What percentage of students are failing?
+
+Challenge 3:
+How many failing students have "Castro R" as a teacher?
+
+Challenge 4:
+How many failing students are not taking music course.  All music course start with a "UL"?
+
+Challenge 5:
+Display all student ID's that are taking music (music courses begin with "UL") and failing.
+
+Challenge 6:
+How many freshmen and sophmores have a gpa over 90?
+
+Challenge 7:
+How many students have the both the following teachers: Banu and Porchetta?
+
+Challenge 8:
+How many freshmen, sophomores, juniors and seniors are there?
+
+Challenge 9:
+For students taking Porchetta, display the number of students by grade level.
+
+
