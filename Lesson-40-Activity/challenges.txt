@@ -1,0 +1,24 @@
+All our questions will be based on the cr101 table using the students database.
+
+Challenge 1:
+Create the database object and connect to the students database.  
+HINT: add the database name when calling the constructor.
+
+Challenge 2:
+Retrieve all the students' information that have "BANU" as a teacher and display the resulting table to the console.
+Hint: Using teacher1 field name
+
+Challenge 3:
+Retrieve all the students' information that have "PORCHETTA" as a teacher during period 10 and display the resulting table to the console.
+Hint: Using teacher1 field name
+
+Challenge 4:
+Retrieve the student id for each student. How many students are there?
+
+Challenge 5:
+Retrieve the student id, course, and period for each student that have a class in the following rooms: 322, 105, 106, 323 that are juniors.
+
+Challenge 6:
+Retrieve all the student information for each student that is taking an AP Math course.
+HINT: All math courses start with an M and all AP classes end with an X.
+
