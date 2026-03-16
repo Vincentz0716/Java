@@ -1,0 +1,19 @@
+Use the students database. Has a safety precaution to minimize errors first use a select statement to make sure you are grabbing the correct records. 
+
+Challenge 1
+Student with id STUDENT1001 room number needs to be changed to 122 for period 3 class.
+
+Challenge 2
+Remove course “ZQCTEDA” for Student with id STUDENT1200 
+
+Challenge 3
+Change the room number of teacher DOYLE for period 4 and 5 to room 213.
+
+Challenge 4
+Mr ROFFLER will be replacing MR ARCHETTI for course “MQF44QGF” with section 1. Update all records to reflect this change.
+
+Challenge 5
+Change STUDENT999 Grade to 11 and the students offcclass to a junior status.
+
+Challenge 6
+Add a course MKUFTC6 with a section 1, CASTRO R will be teaching this course period 9 in room 322 for student1231.
