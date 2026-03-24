@@ -1,0 +1,23 @@
+Using the chinook database to write the SQL statements that produces the list asked (using the diagram to assist you on which tables contain the information and their relationships):
+
+Problem 1
+For the first 30 tracks, get the name of the track and the album name that it belongs to.
+
+
+Problem 2
+For each Invoice on April 2012, retrieve customer first and last name, invoice id, and Invoice date
+
+Problem 3
+For the first 20 invoices get the customer id, invoice id, track name, unit price and quantity .(Hint: information is in three tables)
+
+Problem 4
+What is the list of customers' names whose merchandise is being shipped either to the USA, Germany or Poland? (Hint: use billingcountry and remove duplicates)
+
+Problem 5
+List the first 20 song (track) names that are “Latin” music?
+
+Problem 6
+List all the  “Jazz” album titles. (REMOVE DUPLICATES)
+
+Problem 7
+List all the Pop Artist names. (REMOVE DUPLICATES)
