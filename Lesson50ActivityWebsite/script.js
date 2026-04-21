@@ -1,29 +1,33 @@
-let data;
+let songs = [];
 
-function init() {
-  $.get('https://animated-goggles-9759vvwprw9xh7rqg-8500.app.github.dev/tracks', function(response) {
-
-    data = (typeof response === "string") ? JSON.parse(response) : response;
-
-    generateCards(data);
-  });
+async function init(){
+  let link ="https://animated-goggles-9759vvwprw9xh7rqg-8500.app.github.dev/";
+  let route="tracks";
+  let info = await fetch(link + route);
+  songs = await info.json();
+  renderSongs(songs);
+  console.log(songs);
 }
 
-function generateCards(songs) {
-  const output = document.getElementById('output');
+function renderSongs(arr) {
+  let output = document.getElementById("output");
 
-  let html = "";
+  for (let i = 0; i < arr.length; i++) {
+    let track = arr[i];
 
-  songs.forEach(song => {
-    html += `
+    let card = `
       <div class="card">
-        <h3>${song.Name}</h3>
-        <p>Album ID: ${song.AlbumId}</p>
-        <p>Duration: ${(song.Milliseconds / 60000).toFixed(2)} min</p>
-        <p>Price: $${song.UnitPrice}</p>
+        <h3 class="card-title">Song Name</h3>
+        <p class="value">${track.Name}</p>
+
+        <h3 class="label">Album</h3>
+        <p class="value">${track.Album || "Unknown Album"}</p>
+
+        <h3 class="label">Composer</h3>
+        <p class="value">${track.Composer || "Unknown Composer"}</p>
       </div>
     `;
-  });
 
-  output.innerHTML = html;
+    output.innerHTML += card;
+  }
 }

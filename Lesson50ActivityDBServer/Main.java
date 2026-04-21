@@ -1,46 +1,52 @@
+import com.sun.net.httpserver.HttpContext;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
-
 import java.io.IOException;
-import java.io.OutputStream;
+import java.sql.*;
+
 import java.net.InetSocketAddress;
+import java.util.Map;
 
-public class Main {
+//For compiling on the shell on repl: Same on mac
+//javac -cp sqlite-jdbc-3.23.1.jar: Main.java
+//java -cp sqlite-jdbc-3.23.1.jar: Main
 
-    public static void main(String[] args) throws IOException {
-        int port = 8500;
-        HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
+//Use for windows
+//javac -cp sqlite-jdbc-3.23.1.jar; Main.java
+class Main {
 
-        // Use your Database class
-        Database db = new Database("jdbc:sqlite:chinook.db");
+ public static void main(String[] args)throws IOException{
+    (new Main()).init();
+  }
 
-        // Default route
-        server.createContext("/", exchange -> {
-            String message = "Server is running!";
-            exchange.sendResponseHeaders(200, message.getBytes().length);
-            OutputStream os = exchange.getResponseBody();
-            os.write(message.getBytes());
-            os.close();
-        });
 
-        // /tracks route
-        server.createContext("/tracks", exchange -> {
-            String response;
-            try {
-                String sql = "SELECT TrackId, Name, AlbumId, Milliseconds, UnitPrice FROM Track";
-                response = db.runSQL(sql, "json"); // Your Database class returns JSON
-            } catch (Exception e) {
-                response = "{\"error\":\"" + e.getMessage().replace("\"","\\\"") + "\"}";
-            }
-            exchange.getResponseHeaders().add("Content-Type", "application/json");
-            exchange.sendResponseHeaders(200, response.getBytes().length);
-            OutputStream os = exchange.getResponseBody();
-            os.write(response.getBytes());
-            os.close();
-        });
+  void print(Object o){ System.out.println(o);}
+  void printt(Object o){ System.out.print(o);}
 
-        server.start();
-        System.out.println("Server listening on port " + port);
-    }
+  void init() throws IOException{
+   
+
+    // create a port - our Gateway
+    int port = 8500;
+      
+    //create the HTTPserver object
+    HttpServer server = HttpServer.create(new InetSocketAddress(port),0);
+
+    // create the database object
+    Database db = new Database("jdbc:sqlite:chinook.db");
+    
+    // Add your  code here
+    String sql = "SELECT tracks.Name, tracks.Composer, albums.Title AS Album FROM tracks INNER JOIN albums ON tracks.AlbumId = albums.AlbumId LIMIT 50";
+    server.createContext("/tracks", new RouteHandler(db, sql));
+    server.createContext("/", new RouteHandler("You are connected, but route not given or incorrect....") );
+
+  
+    //Start the server
+    server.start();
+
+    System.out.println("Server is listening on port "+port);
+       
+      
+    }    
 }
