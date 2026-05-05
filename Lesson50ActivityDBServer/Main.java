@@ -37,7 +37,7 @@ class Main {
     Database db = new Database("jdbc:sqlite:chinook.db");
     
     // Add your  code here
-    String sql = "SELECT tracks.Name, tracks.Composer, albums.Title AS Album FROM tracks INNER JOIN albums ON tracks.AlbumId = albums.AlbumId LIMIT 50";
+    String sql = "SELECT tracks.Name, tracks.Composer, albums.Title AS Album FROM tracks INNER JOIN albums ON tracks.AlbumId = albums.AlbumId LIMIT 100";
     server.createContext("/tracks", new RouteHandler(db, sql));
     server.createContext("/", new RouteHandler("You are connected, but route not given or incorrect....") );
 
