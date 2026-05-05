@@ -1,0 +1,12 @@
+Problem 1:
+
+For each customers, create a flipcard where the front has the customer id, first name, last name and thier email. 
+The back of the card as the country and the flag.
+
+HINT: You will need to rewrite the generateCards function.
+
+Problem 2:
+
+For each employee, create a modal card where the text of the card has the employee id, first and last name.
+
+For the content, include the city and the flag of the city.

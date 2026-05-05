@@ -1,0 +1,127 @@
+body{
+  margin:0;
+  font-family:"Times New Roman", serif;
+  background:#fff;
+}
+.header{
+  background:#ffddb9;
+  border:3px solid black;
+  text-align:center;
+  padding:45px 0;
+}
+.header h1{
+  margin:0;
+  font-size:32px;
+}
+.nav{
+  background:#eee98b;
+  border-left:3px solid black;
+  border-right:3px solid black;
+  border-bottom:3px solid black;
+  text-align:center;
+  padding:25px 0 8px 0;
+}
+.nav h2{
+  margin:0 0 15px 0;
+  font-size:25px;
+}
+.nav a, button{
+  background:blue;
+  color:white;
+  border:1px solid blue;
+  border-radius:5px;
+  padding:7px 8px;
+  text-decoration:none;
+  font-size:16px;
+  box-shadow:2px 2px 4px gray;
+}
+.main{
+  display:flex;
+  border-left:3px solid black;
+  border-right:3px solid black;
+  border-bottom:3px solid black;
+  min-height:520px;
+}
+.left,.right{
+  background:#ffd400;
+  border-right:3px solid black;
+  width:20%;
+  text-align:center;
+}
+.right{
+  border-right:0;
+  border-left:3px solid black;
+}
+.center{
+  background:#d89bd5;
+  width:60%;
+  text-align:center;
+  padding:5px;
+}
+.left p,.right p{
+  margin-top:3px;
+}
+.searchTitle{
+  color:blue;
+  font-weight:bold;
+  margin-top:25px;
+}
+input{
+  height:20px;
+  width:170px;
+  text-align:right;
+}
+.cardBox{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+}
+.card{
+  background:#d8d8e0;
+  border:1px solid black;
+  padding:18px 8px 8px 8px;
+  min-height:160px;
+  font-size:18px;
+}
+.card h3{
+  margin:5px 0 20px 0;
+  font-size:20px;
+}
+.card .line{
+  font-weight:bold;
+  font-style:italic;
+  text-decoration:underline;
+}
+.card .normalLine{
+  font-style:italic;
+  margin-top:20px;
+}
+.card img{
+  width:70px;
+  height:70px;
+  object-fit:cover;
+  margin-top:15px;
+}
+.card hr{
+  margin-top:10px;
+}
+.homeText{
+  font-weight:bold;
+  font-size:19px;
+  text-align:left;
+  padding-top:20px;
+}
+.footer{
+  background:#fff0d8;
+  border-left:3px solid black;
+  border-right:3px solid black;
+  border-bottom:3px solid black;
+  padding:25px 0;
+  font-weight:bold;
+  font-size:18px;
+}
+@media(max-width:900px){
+  .main{display:block;}
+  .left,.center,.right{width:auto;min-height:80px;border-left:3px solid black;border-right:3px solid black;}
+  .cardBox{grid-template-columns:1fr;}
+}

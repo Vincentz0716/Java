@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chinook Songs</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="songs.js"></script>
+</head>
+<body onload="init()">
+  <div class="header"><h1>Lesson 54 - Chinook Customers</h1></div>
+  <div class="nav">
+    <h2>Navigation - Song Page</h2>
+    <a href="index.html">HOME</a>
+    <a href="customers.html">CUSTOMERS</a>
+    <a href="employees.html">EMPLOYEES</a>
+    <a href="songs.html">SONGS</a>
+  </div>
+  <div class="main">
+    <div class="left">
+      <p>Left Panel</p>
+      <p class="searchTitle">Search by song name</p>
+      <input id="songInput" placeholder="Enter song name">
+      <button onclick="searchSongs()">Search</button>
+    </div>
+    <div class="center"><div id="songOutput" class="cardBox"></div></div>
+    <div class="right"><p>Right Panel</p></div>
+  </div>
+</body>
+</html>
