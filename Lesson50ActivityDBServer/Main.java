@@ -15,8 +15,7 @@ import java.util.Map;
 //Use for windows
 //javac -cp sqlite-jdbc-3.23.1.jar; Main.java
 class Main {
-
- public static void main(String[] args)throws IOException{
+    public static void main(String[] args)throws IOException{
     (new Main()).init();
   }
 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Club Hub | Activity</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body id="activity">
+    <div class="topbar">
+      <div class="brand">
+        <div class="brand-mark">HUB</div>
+        <div>
+          <p class="eyebrow">Club Hub</p>
+          <h1>Activity</h1>
+        </div>
+      </div>
+      <div class="nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/clubs.html">View & Filter</a>
+        <a class="nav-link" href="/analysis.html">Analysis</a>
+        <a class="nav-link active" href="/activity.html">Activity</a>
+        <div id="translate-container"></div>
+      </div>
+    </div>
+    <div class="page">
+      <div class="panel">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Current activity</p>
+            <h2>See events, recent memberships, and a photo gallery.</h2>
+          </div>
+          <p class="small-note">Built from joined tables</p>
+        </div>
+        <div id="activity-stats" class="stats-grid"></div>
+      </div>
+      <div class="panel">
+        <div class="section-header">
+          <h3>Category breakdown</h3>
+          <p class="small-note">Clubs, members, and events by category</p>
+        </div>
+        <div id="activity-breakdown" class="stack"></div>
+      </div>
+      <div class="split-grid">
+        <div class="panel">
+          <div class="section-header">
+            <h3>Upcoming events</h3>
+            <p class="small-note">Sorted by date</p>
+          </div>
+          <div id="activity-events" class="stack"></div>
+        </div>
+        <div class="panel">
+          <div class="section-header">
+            <h3>Recent memberships</h3>
+            <p class="small-note">Student join history</p>
+          </div>
+          <div id="activity-memberships" class="stack"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="section-header">
+          <h3>Photo gallery</h3>
+          <p class="small-note">Feature image placeholders from events</p>
+        </div>
+        <div id="activity-gallery" class="gallery-grid"></div>
+      </div>
+    </div>
+    <div id="foot">By: Haoxuan Zheng @ 2026</div>
+  </body>
+</html>

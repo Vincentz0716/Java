@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Valorant Skin Hub | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body id="home">
+    <div class="topbar">
+      <div class="brand">
+        <div class="brand-mark">VAL</div>
+        <div>
+          <p class="eyebrow">Valorant Skin Hub</p>
+          <h1>Browse skins, collections, prices, and weapon types</h1>
+        </div>
+      </div>
+      <div class="nav">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="skins.html">View & Filter</a>
+        <a class="nav-link" href="analysis.html">Analysis</a>
+        <a class="nav-link" href="activity.html">Collections</a>
+      </div>
+    </div>
+    <div class="page">
+      <div class="panel hero-panel">
+        <p class="eyebrow">About the project</p>
+        <h2>Find Valorant skins that match your favorite weapon, rarity, and collection.</h2>
+        <p class="lead">This website uses a SQLite database, Java server routes, HTML, CSS, and JavaScript. The database contains 100 Valorant skin records.</p>
+      </div>
+      <div id="home-stats" class="stats-grid"></div>
+      <div class="split-grid">
+        <div class="panel">
+          <div class="section-header">
+            <h3>Featured skins</h3>
+            <p class="small-note">Loaded from the database</p>
+          </div>
+          <div id="home-skins" class="stack"></div>
+        </div>
+        <div class="panel">
+          <div class="section-header">
+            <h3>Top collections</h3>
+            <p class="small-note">Based on skin count</p>
+          </div>
+          <div id="home-collections" class="stack"></div>
+        </div>
+      </div>
+    </div>
+    <div id="foot">By: Jonathan Mack, Name 2, Name 3, Name 4</div>
+  </body>
+</html>

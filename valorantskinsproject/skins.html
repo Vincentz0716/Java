@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Valorant Skin Hub | View & Filter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body id="skins">
+    <div class="topbar">
+      <div class="brand">
+        <div class="brand-mark">VAL</div>
+        <div>
+          <p class="eyebrow">Valorant Skin Hub</p>
+          <h1>Skin directory</h1>
+        </div>
+      </div>
+      <div class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="skins.html">View & Filter</a>
+        <a class="nav-link" href="analysis.html">Analysis</a>
+        <a class="nav-link" href="activity.html">Collections</a>
+      </div>
+    </div>
+    <div class="page">
+      <div class="panel">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Search and filter</p>
+            <h2>Filter Valorant skins by weapon, collection, rarity, and price.</h2>
+          </div>
+          <p class="small-note">Hover cards for extra details</p>
+        </div>
+        <div class="filters">
+          <label>
+            <div>Search by skin name</div>
+            <input id="skin-search" type="search" placeholder="Search skins">
+          </label>
+          <label>
+            <div>Weapon</div>
+            <select id="skin-weapon"><option value="all">All weapons</option></select>
+          </label>
+          <label>
+            <div>Collection</div>
+            <select id="skin-collection"><option value="all">All collections</option></select>
+          </label>
+          <label>
+            <div>Rarity</div>
+            <select id="skin-rarity"><option value="all">All rarities</option></select>
+          </label>
+          <label>
+            <div>Sort by</div>
+            <select id="skin-sort">
+              <option value="name">Name</option>
+              <option value="weapon">Weapon</option>
+              <option value="price-high">Highest price</option>
+              <option value="price-low">Lowest price</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="section-header">
+          <h3>Skin cards</h3>
+          <div id="skin-count" class="small-note"></div>
+        </div>
+        <div id="skin-grid" class="card-grid"></div>
+      </div>
+    </div>
+    <div id="foot">By: Jonathan Mack, Name 2, Name 3, Name 4</div>
+  </body>
+</html>
